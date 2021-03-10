@@ -5,13 +5,13 @@ navbar:
   left:
   - text: Home
     href: index.html
-  - text: CA Analysis
+  - text: "CA Analysis"
     href: CAanalysis.html
-  - text: CONUS Analysis
+  - text: "CONUS Analysis"
     href: CONUSanalysis.html
-  - text: MAL Analysis
+  - text: "MAL Analysis"
     href: MALanalysis.html
-  - text: NEY Analysis
+  - text: "NEY Analysis"
     href: NEYanalysis.html
   - text: About
     href: about.html
