@@ -15,7 +15,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -24,6 +24,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/master/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -294,6 +296,18 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
+  <a href="CAanalysis.html">CA Analysis</a>
+</li>
+<li>
+  <a href="CONUSanalysis.html">CONUS Analysis</a>
+</li>
+<li>
+  <a href="MALanalysis.html">MAL Analysis</a>
+</li>
+<li>
+  <a href="NEYanalysis.html">NEY Analysis</a>
+</li>
+<li>
   <a href="about.html">About</a>
 </li>
 <li>
@@ -301,7 +315,13 @@ $(document).ready(function () {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/julesolson/EVTWorkflow">
+    <span class="fa fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -336,7 +356,7 @@ $(document).ready(function () {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-02-21
+<strong>Last updated:</strong> 2021-03-10
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -367,35 +387,27 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong29a0a3d"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> 29a0a3d </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulesolsonEVTWorkflowtree8f04ec0a21138c40af93f128f9cf7245de1c54f8targetblank8f04ec0a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julesolson/EVTWorkflow/tree/8f04ec0a21138c40af93f128f9cf7245de1c54f8" target="_blank">8f04ec0</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong29a0a3d" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulesolsonEVTWorkflowtree8f04ec0a21138c40af93f128f9cf7245de1c54f8targetblank8f04ec0a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 29a0a3d. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julesolson/EVTWorkflow/tree/8f04ec0a21138c40af93f128f9cf7245de1c54f8" target="_blank">8f04ec0</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
-Untracked files:
-    Untracked:  analysis/CAanalysis.Rmd
-    Untracked:  analysis/CONUSanalysis.Rmd
-    Untracked:  analysis/MALanalysis.Rmd
-    Untracked:  analysis/NEYanalysis.Rmd
-    Untracked:  buildingEVTworkflow.R
-    Untracked:  data/US200EVT_CA.csv
-    Untracked:  data/US200EVT_CA_TNC.csv
-    Untracked:  data/US200EVT_CONUS.csv
-    Untracked:  data/US200EVT_CONUS_TNC.csv
-    Untracked:  data/US200EVT_MAL.csv
-    Untracked:  data/US200EVT_MAL_TNC.csv
-    Untracked:  data/US200EVT_NEY.csv
-    Untracked:  data/US200EVT_NEY_TNC.csv
+Ignored files:
+    Ignored:    .Rhistory
+    Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   _workflowr.yml
 
 </code></pre>
 <p>
@@ -436,10 +448,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julesolson/EVTWorkflow/e30b6143d18cbc18df32107ff9d2fc2b8eafc8d8/docs/index.html" target="_blank">e30b614</a>
+</td>
+<td>
+julesolson
+</td>
+<td>
+2021-02-24
+</td>
+<td>
+Meeting 2/24
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-29a0a3d
+<a href="https://github.com/julesolson/EVTWorkflow/blob/29a0a3d835e43ac628a293e929ccf5579a7cab88/analysis/index.Rmd" target="_blank">29a0a3d</a>
 </td>
 <td>
 julesolson

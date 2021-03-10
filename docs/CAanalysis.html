@@ -29,6 +29,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/master/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -391,7 +393,13 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/julesolson/EVTWorkflow">
+    <span class="fa fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -519,16 +527,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong1f3763f"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> 1f3763f </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulesolsonEVTWorkflowtree8f04ec0a21138c40af93f128f9cf7245de1c54f8targetblank8f04ec0a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julesolson/EVTWorkflow/tree/8f04ec0a21138c40af93f128f9cf7245de1c54f8" target="_blank">8f04ec0</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong1f3763f" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulesolsonEVTWorkflowtree8f04ec0a21138c40af93f128f9cf7245de1c54f8targetblank8f04ec0a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 1f3763f. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julesolson/EVTWorkflow/tree/8f04ec0a21138c40af93f128f9cf7245de1c54f8" target="_blank">8f04ec0</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -537,6 +545,9 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   _workflowr.yml
 
 </code></pre>
 <p>
@@ -580,7 +591,24 @@ Message
 html
 </td>
 <td>
-1720a4e
+<a href="https://rawcdn.githack.com/julesolson/EVTWorkflow/7d83be7dd0a41984ac3d39e473c705573d1ce1a8/docs/CAanalysis.html" target="_blank">7d83be7</a>
+</td>
+<td>
+julesolson
+</td>
+<td>
+2021-03-10
+</td>
+<td>
+change knit root to analysis
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julesolson/EVTWorkflow/1720a4e160d10f439b4088d4839791197f770167/docs/CAanalysis.html" target="_blank">1720a4e</a>
 </td>
 <td>
 julesolson
@@ -597,7 +625,7 @@ updated site.yml file
 Rmd
 </td>
 <td>
-e30b614
+<a href="https://github.com/julesolson/EVTWorkflow/blob/e30b6143d18cbc18df32107ff9d2fc2b8eafc8d8/analysis/CAanalysis.Rmd" target="_blank">e30b614</a>
 </td>
 <td>
 julesolson
@@ -614,7 +642,7 @@ Meeting 2/24
 html
 </td>
 <td>
-e30b614
+<a href="https://rawcdn.githack.com/julesolson/EVTWorkflow/e30b6143d18cbc18df32107ff9d2fc2b8eafc8d8/docs/CAanalysis.html" target="_blank">e30b614</a>
 </td>
 <td>
 julesolson
@@ -856,24 +884,23 @@ attached base packages:
 other attached packages:
  [1] forcats_0.5.0   stringr_1.4.0   dplyr_1.0.3     purrr_0.3.3    
  [5] readr_1.3.1     tidyr_1.0.0     tibble_3.0.5    ggplot2_3.2.1  
- [9] tidyverse_1.3.0 knitr_1.30     
+ [9] tidyverse_1.3.0 knitr_1.30      workflowr_1.6.2
 
 loaded via a namespace (and not attached):
  [1] tidyselect_1.1.0 xfun_0.19        haven_2.3.1      colorspace_1.4-1
  [5] vctrs_0.3.6      generics_0.1.0   htmltools_0.5.0  yaml_2.2.1      
  [9] rlang_0.4.10     later_1.1.0.1    pillar_1.4.7     withr_2.1.2     
-[13] glue_1.4.2       DBI_1.1.1        dbplyr_2.0.0     modelr_0.1.8    
-[17] readxl_1.3.1     lifecycle_0.2.0  cellranger_1.1.0 munsell_0.5.0   
-[21] gtable_0.3.0     workflowr_1.6.2  rvest_0.3.6      evaluate_0.14   
-[25] labeling_0.3     httpuv_1.5.5     highr_0.8        broom_0.7.3     
-[29] Rcpp_1.0.2       promises_1.2.0.1 backports_1.1.5  scales_1.0.0    
-[33] jsonlite_1.6.1   fs_1.5.0         hms_0.5.2        digest_0.6.21   
-[37] stringi_1.4.3    rprojroot_1.3-2  grid_3.6.1       cli_1.1.0       
-[41] tools_3.6.1      magrittr_1.5     lazyeval_0.2.2   crayon_1.3.4    
-[45] whisker_0.4      pkgconfig_2.0.3  ellipsis_0.3.0   xml2_1.3.2      
-[49] reprex_0.3.0     lubridate_1.7.4  assertthat_0.2.1 rmarkdown_2.5   
-[53] httr_1.4.1       rstudioapi_0.11  R6_2.4.0         git2r_0.28.0    
-[57] compiler_3.6.1  </code></pre>
+[13] glue_1.4.2       DBI_1.1.1        dbplyr_2.0.0     readxl_1.3.1    
+[17] modelr_0.1.8     lifecycle_0.2.0  cellranger_1.1.0 munsell_0.5.0   
+[21] gtable_0.3.0     rvest_0.3.6      evaluate_0.14    labeling_0.3    
+[25] httpuv_1.5.5     highr_0.8        broom_0.7.3      Rcpp_1.0.2      
+[29] promises_1.2.0.1 backports_1.1.5  scales_1.0.0     jsonlite_1.6.1  
+[33] fs_1.5.0         hms_0.5.2        digest_0.6.21    stringi_1.4.3   
+[37] rprojroot_1.3-2  grid_3.6.1       cli_1.1.0        tools_3.6.1     
+[41] magrittr_1.5     lazyeval_0.2.2   crayon_1.3.4     whisker_0.4     
+[45] pkgconfig_2.0.3  ellipsis_0.3.0   xml2_1.3.2       reprex_0.3.0    
+[49] lubridate_1.7.4  assertthat_0.2.1 rmarkdown_2.5    httr_1.4.1      
+[53] rstudioapi_0.11  R6_2.4.0         git2r_0.28.0     compiler_3.6.1  </code></pre>
 </div>
 </div>
 </div>
